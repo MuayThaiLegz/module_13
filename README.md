@@ -56,24 +56,26 @@ TensorFlow provides a collection of workflows to develop and train models using 
 # Scikit-learn
 We used Scikit-learn 
 
-We used StandardScaler to scale our data as needed.
-We used PCA to decompose our data down in dimensions. 
-We used Kmeans as our ML Algo.
+We used train_test_split to split our data as needed.
+We used StandardScaler to Standardize features by removing the mean and scaling to unit variance 
+We used transform to perform standardization by centering and scaling
+
 ---
 ```
-# Initialize the K-Means model
+# Split the preprocessed data into a training and testing dataset
+# Assign the function a random_state equal to 1
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state= 1)
 
-second_model4 = KMeans(n_clusters=4, random_state=1)
+# Create a StandardScaler instance
+scaler = StandardScaler()
 
-# Fit the model
+# Fit the scaler to the features training dataset
+X_scaler = scaler.fit(X_train)  
 
-second_model4.fit(scaled_data_pca_data)
+X_train_scaled = X_scaler.transform(X_train)
 
-# Predict clusters
-second_model4 = second_model4.predict(scaled_data_pca_data)
+X_test_scaled = X_scaler.transform(X_test)
 
-# View the resulting array
-second_model4
 ```
 ---
 
