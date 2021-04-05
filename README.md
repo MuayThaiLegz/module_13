@@ -35,13 +35,16 @@ pandas is a Python package providing fast, flexible, and expressive data structu
 ![Pandas](https://miro.medium.com/max/819/1*Dss7A8Z-M4x8LD9ccgw7pQ.png)
 
 ---
+
 # TensorFlow 
 We used TensorFlow  
 
-*In creating statistical graphics 
-*The heatmap to display correlations in our data. To plot detail 
+*In creating statistical graphics.
+*The heatmap to display correlations in our data. To plot detail.
 *It help fortifine our inital ideas in visual form.
+
 ---
+
 ```
 # Note that when using the delayed-build pattern (no input shape specified),
 # the model gets built the first time you call `fit`, `eval`, or `predict`,
@@ -70,8 +73,8 @@ TensorFlow provides a collection of workflows to develop and train models using 
 We used Scikit-learn 
 
 *We used train_test_split to split our data as needed.
-*We used StandardScaler to Standardize features by removing the mean and scaling to unit variance 
-*We used transform to perform standardization by centering and scaling
+*We used StandardScaler to Standardize features by removing the mean and scaling to unit variance.
+*We used transform to perform standardization by centering and scaling.
 
 ---
 ```
