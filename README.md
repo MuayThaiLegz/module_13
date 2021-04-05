@@ -1,3 +1,15 @@
+# Working as a Risk Management Associate at Alphabet Soup
+
+* Explanation
+
+To predict whether Alphabet Soup funding applicants will be successful, you will create a binary classification model using a deep neural network.
+
+Preprocess data for a neural network model.
+
+Use the model-fit-predict pattern to compile and evaluate a binary classification model.
+
+Optimize the model.
+
 ---
 
 * Technologies 
@@ -102,3 +114,13 @@ Scikit-learn provides a range of supervised and unsupervised learning algorithms
 ![Scikit](https://miro.medium.com/max/866/1*1ouD8HMkmJffNSAMfvBSkw.png)
 
 ---
+
+
+
+## This Prophet forecast analysis was cntributed to by the entire UC Berkeley FinTech BootCamp 
+[UC Berkeley Extension](https://bootcamp.berkeley.edu/fintech/)
+
+---
+## License
+
+This is a open source project take it and improve it 10000 X
