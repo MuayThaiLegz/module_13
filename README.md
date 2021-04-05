@@ -5,9 +5,9 @@
 # Pandas
 We used Pandas
 
-Importing the data.
-Creating Pandas objects with Pandas methods.
-Using Pandas methods on our dataframes.
+*Importing the data.
+*Creating Pandas objects with Pandas methods.
+*Using Pandas methods on our dataframes.
 
 ---
 
@@ -38,9 +38,9 @@ pandas is a Python package providing fast, flexible, and expressive data structu
 # TensorFlow 
 We used TensorFlow  
 
-In creating statistical graphics 
-The heatmap to display correlations in our data. To plot detail 
-It help fortifine our inital ideas in visual form.
+*In creating statistical graphics 
+*The heatmap to display correlations in our data. To plot detail 
+*It help fortifine our inital ideas in visual form.
 ---
 ```
 # Note that when using the delayed-build pattern (no input shape specified),
@@ -66,9 +66,9 @@ TensorFlow provides a collection of workflows to develop and train models using 
 # Scikit-learn
 We used Scikit-learn 
 
-We used train_test_split to split our data as needed.
-We used StandardScaler to Standardize features by removing the mean and scaling to unit variance 
-We used transform to perform standardization by centering and scaling
+*We used train_test_split to split our data as needed.
+*We used StandardScaler to Standardize features by removing the mean and scaling to unit variance 
+*We used transform to perform standardization by centering and scaling
 
 ---
 ```
