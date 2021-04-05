@@ -25,27 +25,31 @@ pandas is a Python package providing fast, flexible, and expressive data structu
 ![Pandas](https://miro.medium.com/max/819/1*Dss7A8Z-M4x8LD9ccgw7pQ.png)
 
 ---
-# Seaborn
-We used Seaborn 
+# TensorFlow 
+We used TensorFlow  
 
 In creating statistical graphics 
 The heatmap to display correlations in our data. To plot detail 
 It help fortifine our inital ideas in visual form.
 ---
 ```
-sns.catplot(
-    x='Total Liabilities',
-    y= "Total Current Assets",
-    hue="Ticker",
-    kind="bar",
-    data=isolated_companies_full_data.reset_index(),
-    aspect=4)
+# Note that when using the delayed-build pattern (no input shape specified),
+# the model gets built the first time you call `fit`, `eval`, or `predict`,
+# or the first time you call the model on some input data.
+model = tf.keras.Sequential()
+model.add(tf.keras.layers.Dense(8))
+model.add(tf.keras.layers.Dense(1))
+model.compile(optimizer='sgd', loss='mse')
+# This builds the model for the first time:
+model.fit(x, y, batch_size=32, epochs=10)
+
 ```
 ---
-https://seaborn.pydata.org/
-Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
+https://www.tensorflow.org/
 
-![seaborn](https://livecodestream.dev/post/how-to-build-beautiful-plots-with-python-and-seaborn/featured_hue585f61b28a74a671118de43150c5d63_166173_680x0_resize_q75_box.jpg)
+TensorFlow provides a collection of workflows to develop and train models using Python or JavaScript, and to easily deploy in the cloud, on-prem, in the browser, or on-device no matter what language you use. The tf. data API enables you to build complex input pipelines from simple, reusable pieces
+
+![TensorFlow](https://www.tensorflow.org/site-assets/images/project-logos/tensorflow-quantum-logo-social.png)
 
 ---
 
