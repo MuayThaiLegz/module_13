@@ -47,9 +47,12 @@ We used TensorFlow
 # the model gets built the first time you call `fit`, `eval`, or `predict`,
 # or the first time you call the model on some input data.
 model = tf.keras.Sequential()
+
 model.add(tf.keras.layers.Dense(8))
 model.add(tf.keras.layers.Dense(1))
+
 model.compile(optimizer='sgd', loss='mse')
+
 # This builds the model for the first time:
 model.fit(x, y, batch_size=32, epochs=10)
 
