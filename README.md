@@ -6,16 +6,26 @@
 We used Pandas
 
 Importing the data.
-Creating dataframes with Pandas methods.
+Creating Pandas objects with Pandas methods.
 Using Pandas methods on our dataframes.
+
 ---
+
 ```
-balance_sheet_tanglibles.groupby(level=0).plot.bar(
-    title= ('Displays[balance_sheet_tanglibles] per Company'),
-    figsize=(17,13),
-    rot =360, 
-    grid =True, 
-    fontsize = 13)
+# Read the applicants_data.csv file from the Resources folder into a Pandas DataFrame
+applicant_data_df = pd.read_csv(
+    Path('applicants_data.csv'))
+
+# Review the DataFrame
+
+applicant_data_df.head(5)
+
+# Drop the 'EIN' and 'NAME' columns from the DataFrame
+applicant_data_df_droped = applicant_data_df.drop(columns=['EIN', 'NAME'])
+
+# Create a list of categorical variables 
+categorical = list(applicant_data_df_droped.dtypes[applicant_data_df_droped.dtypes=='object'].index)
+
 ```
 ---
 https://pandas.pydata.org/
